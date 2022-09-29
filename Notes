@@ -1,0 +1,4 @@
+npm init -y to to start node project
+npm install express cors lodash uuid to install express server
+"start": "node index.js" remove test and add that to the package script
+npm start to start the server 
