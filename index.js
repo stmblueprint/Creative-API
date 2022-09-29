@@ -14,18 +14,22 @@ app.use(express.json());
 app.use(cors());
 
 // get route // request and response coming back
-app.get("/outfit", (req, res) =>{
+app.get("/two_dimensional", (req, res) =>{
 
     const tops = ["Black", "White", "Orange"];
     const jeans = ["Black", "White", "Navy", "Pink"];
     const shoes = ["White", "Grey", "Yellow"];
+    const persons = {firstName:"John", lastName:"Doe", age:46};
+
+
 
 
 
     res.json ({
         top: _.sample(tops),
         jeans: _.sample(jeans),
-        shoes: _.sample(shoes)
+        shoes: _.sample(shoes),
+        person: _.sample(persons)
 
     });
 //   res.send("This is working!");
