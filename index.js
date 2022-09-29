@@ -19,13 +19,15 @@ app.get("/twodimensional", (req, res) =>{
     const tops = ["Black", "White", "Orange"];
     const jeans = ["Black", "White", "Navy", "Pink"];
     const shoes = ["White", "Grey", "Yellow"];
+    const person = {firstName:"John", lastName:"Doe", age:46};
 
 
 
     res.json ({
         top: _.sample(tops),
         jeans: _.sample(jeans),
-        shoes: _.sample(shoes)
+        shoes: _.sample(shoes),
+        persons: _.sample(person.firstName)
 
     });
 //   res.send("This is working!");
