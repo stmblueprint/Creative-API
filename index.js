@@ -29,7 +29,7 @@ app.get("/two_dimensional", (req, res) =>{
         top: _.sample(tops),
         jeans: _.sample(jeans),
         shoes: _.sample(shoes),
-        person: _.sample(persons)
+       
 
     });
 //   res.send("This is working!");
