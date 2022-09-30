@@ -16,20 +16,32 @@ app.use(cors());
 // get route // request and response coming back
 app.get("/twodimensional", (req, res) =>{
 
-    const tops = ["Black", "White", "Orange"];
-    const jeans = ["Black", "White", "Navy", "Pink"];
-    const shoes = ["White", "Grey", "Yellow"];
-    const person = {firstName:"John", lastName:"Doe", age:46};
+
+res.json ( [{ 
+      
+    // ids: _.sample(idea.id),
+    id: "1", 
+    type:"2D", 
+    prompt:"Driving on the beach"
+   
+    },
+
+    {
+        id: "1", 
+        type:"3D", 
+        prompt:"Create a rainbow sphere"
+    }
+    
+    
+    
+
+]);
 
 
 
-    res.json ({
-        top: _.sample(tops),
-        jeans: _.sample(jeans),
-        shoes: _.sample(shoes),
-        persons: _.sample(person.firstName)
 
-    });
+
+
 //   res.send("This is working!");
 
 });
