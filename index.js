@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors());
 
 // get route // request and response coming back
-app.get("/twodimensional", (req, res) =>{
+app.get("/two-dimensional", (req, res) =>{
 
 
 res.json ( [{ 
@@ -22,29 +22,51 @@ res.json ( [{
     // ids: _.sample(idea.id),
     id: "1", 
     type:"2D", 
-    prompt:"Driving on the beach"
+    prompt:"Draw a biker riding on the beach"
    
     },
 
     {
-        id: "1", 
-        type:"3D", 
-        prompt:"Create a rainbow sphere"
+        id: "2", 
+        type:"2D", 
+        prompt:"Draw your favorite object"
     }
     
-    
-    
-
 ]);
-
-
-
-
-
 
 //   res.send("This is working!");
 
 });
+
+app.get("/three-dimensional", (req, res) =>{
+
+
+    res.json ( [{ 
+          
+        // ids: _.sample(idea.id),
+        id: "1", 
+        type:"3D", 
+        prompt:"Create a spinning logo"
+       
+        },
+    
+        {
+            id: "2", 
+            type:"3D", 
+            prompt:"Create a rainbow sphere"
+        }
+        
+        
+    
+    ]);
+    
+    //   res.send("This is working!");
+    
+    });
+    
+
+
+
 
 // get comments by id
 // make this func async so we can use away below
