@@ -60,7 +60,7 @@ app.get("/three-dimensional", (req, res) =>{
     
     ]);
     
-    //   res.send("This is working!");
+      res.send("This is working!");
     
     });
     
