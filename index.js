@@ -118,5 +118,5 @@ app.post("/comments", async (req, res) =>{
 
 
 
-app.listen(3003, () => console.log("API Server is running...."));
+app.listen(3004, () => console.log("API Server is running...."));
 
