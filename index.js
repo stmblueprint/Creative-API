@@ -16,23 +16,17 @@ app.use(cors());
 // get route // request and response coming back
 app.get("/two-dimensional", (req, res) =>{
 
+    const twoDimensional = [
+        "Draw your favorite anime character",
+        "Draw a chicken head on a human body",
 
-res.json ( [{ 
+    ];
+
+res.json ({ 
       
-    // ids: _.sample(idea.id),
-    id: "1", 
-    type:"2D", 
-    prompt:"Draw a biker riding on the beach"
-   
-    },
-
-    {
-        id: "2", 
-        type:"2D", 
-        prompt:"Draw your favorite object"
-    }
+    ids: _.sample(twoDimensional),
     
-]);
+});
 
 //   res.send("This is working!");
 
@@ -124,5 +118,5 @@ app.post("/comments", async (req, res) =>{
 
 
 
-app.listen(3000, () => console.log("API Server is running...."));
+app.listen(3003, () => console.log("API Server is running...."));
 
